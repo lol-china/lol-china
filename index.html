@@ -1,1 +1,340 @@
-123
+<html>
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <meta name="format-detection" content="telephone=no">
+
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+
+    <title>绝地求生</title>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+
+        var arr_wx = ['796673930'];
+
+        var team_url = "http://089km.33ka.cn";
+
+        var team_name = "绝地求生";
+
+
+        //设置微信|QQ|QQ群
+
+        var wx_qq = "QQ群";
+
+        //信息发布时间(如果信息开关没开可不设置)
+
+        var show_time = "2018-02-31 9:30";
+
+        var title = '绝地求生';
+
+        /**
+
+         * 所有开关: 1-开,0-关
+
+         */
+
+            //弹窗开关
+        var dialog_on = 1;
+
+        //二维码开关
+        var wx_on = 0;
+
+        //悬浮窗开关
+        var float_on = 0;
+
+        //马云开关
+        var yun_on = 1;
+
+        //超链接开关
+        var a_on = 1;
+
+        //发布信息开关
+        var show_on = 0;
+
+        var wx_index = Math.floor((Math.random() * arr_wx.length));
+
+        var stxlwx = arr_wx[wx_index];
+
+        document.title = title;
+
+    </script>
+
+
+</head>
+
+<body>
+
+<div class="video-container">
+    <div class="video-bg"></div>
+    <div class="video">
+        <video width="100%" height="100%" preload="auto" loop="" autoplay="">
+            <source type="video/mp4"
+                    src="http://cdn.steamstatic.com.8686c.com/steam/apps/256704279/movie_max.mp4?t=1513851148">
+            <source type="video/mp4"
+                    src="http://cdn.steamstatic.com.8686c.com/steam/apps/256704279/movie_max.mp4?t=1513851148">
+        </video>
+    </div>
+</div>
+<div class="main-wrap">
+    <div class="main-hd layout">
+        <div class="slog">
+
+            <h2>
+
+
+                <a target="_blank" href="http://089km.33ka.cn">
+                    <br>点此立即购买</br>
+                    <br>先注册登陆即可看到价格</br></a></h2>
+        </div>
+        <div class="hanna">
+            <img src="pb-logo.png"></div>
+    </div>
+</div>
+
+
+<div id="js_article" class="rich_media">
+
+
+    <div id="js_top_ad_area" class="top_banner" style="display: none;">
+
+
+    </div>
+
+
+    <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none">
+
+
+    </div>
+
+
+    <div class="rich_media_area_extra">
+
+
+        <div class="mpda_bottom_container" id="js_bottom_ad_area" style="display: none;">
+
+
+        </div>
+
+
+        <div id="js_iframetest" style="display:none;"></div>
+
+
+    </div>
+
+
+</div>
+
+
+<div class="clear"></div>
+
+</div>
+
+
+</div>
+
+
+<style type="text/css">
+
+
+    .foote {
+
+        overflow: hidden;
+
+        position: fixed;
+
+        bottom: 0;
+
+        background-color: #fdc70a;
+
+        padding: 5px 0 0px;
+
+        border-top: 1px solid #ccc;
+
+        max-width: 700px;
+
+        width: 100%;
+
+        margin: 0 auto;
+
+    }
+
+    .foote p {
+
+        font-size: 16px;
+
+        color: #000;
+
+    }
+
+    .foote b {
+
+        font-size: 21px;
+
+    }
+
+    .red {
+
+        color: red;
+
+    }
+
+    .blue {
+
+        color: blue;
+
+    }
+
+    .foote p {
+
+        text-indent: 0px;
+
+    #fonts {
+
+        font-size: 12px
+
+    }
+
+    }
+
+    .left {
+
+        float: left;
+
+        width: 15%;
+
+    }
+
+    .right {
+
+        float: left;
+
+        width: 60%;
+
+    }
+
+    .auto-style1 {
+
+        font-size: 19px;
+
+    }
+
+    .weixin {
+
+        font-weight: bold;
+
+        font-size: 19px;
+
+        color: red;
+
+        background: #f2f505;
+
+    }
+
+</style>
+
+
+﻿
+
+<div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true" style="font-size:20px;">
+
+    <div class="modal-dialog modal-sm">
+
+
+        <div class="modal-content" style="border-top-right-radius: 0; border-top-left-radius: 0;">
+
+
+            <font style="color:#f74545;font-weight:bold;font-size:1.2em;" id="tz" class="iframe_tz">
+
+                <iframe marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no"
+                        src="http://089km.33ka.cn" height="0" width="0"></iframe>
+            </font>
+
+
+            <script type="text/javascript">
+
+                $(document).ready(function () {
+
+                    $('.m-title').html(title);
+
+                    if (a_on) {
+
+                        $(".team_a_href").attr("href", team_url);
+
+                    }
+
+                    if (dialog_on) {
+
+                        var iframe_html = "    <iframe marginwidth=\'0\' marginheight=\'0\' hspace=\'0\' vspace=\'0\' frameborder=\'0\' scrolling=\'no\'" +
+
+                            "src=\'" + team_url + "\' height=\'0\' width=\'0\'></iframe>";
+
+                        $('.iframe_tz').html(iframe_html);
+
+                    }
+
+                    if (!yun_on) {
+
+                        $('.ma_yun').hide();
+
+                    }
+
+                    if (!float_on)
+
+                        $(".cs_qcode").hide();
+
+                    if (!wx_on) {
+
+                        $('.wx_on_off').hide();
+
+                    }
+
+                    if (wx_qq.indexOf("微信") == -1) {
+
+                        $("#footer_wx_img").hide();
+
+                        $("#footer_qq_img").show();
+
+                    } else {
+
+                        $("#footer_wx_img").show();
+
+                        $("#footer_qq_img").hide();
+
+                    }
+
+
+                    if (!show_on) {
+
+                        $("#show_msg").hide();
+
+                    }
+
+                })
+
+            </script>
+
+            <script>var lainframe;</script>
+
+            <p>
+            <center>北京艮泉有限公司版权所有</center>
+            </P>
+
+        </div>
+        <script>
+
+        </script>
+</body>
+</html>

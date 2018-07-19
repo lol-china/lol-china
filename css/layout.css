@@ -77,9 +77,9 @@ img{border:none;}.f32{font-size:32px;}.tc{text-align:center}.tl{text-align:left}
     width: 100%;
     z-index: 50;
     position: absolute;
-    top: 405px;
+    top: 450px;
     text-shadow: 3px 3px 0 rgba(0,0,0,.5);
-    left: 21px;
+    left: 0px;
 }
 .slog h2{
     font-size: 60px;
